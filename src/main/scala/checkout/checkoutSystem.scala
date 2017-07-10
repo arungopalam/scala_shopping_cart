@@ -5,7 +5,10 @@ import scala.collection.mutable.ListBuffer
 /**
   * Created by arung on 7/9/2017.
   */
-case class checkoutSystem(offers: List[IOffer]) extends checkout.checkout{
+
+case class checkoutSystem(offers:List[IOffer]) extends checkout.checkout{
+
+  def this() = this(List())
 
   private var items : ListBuffer[IItem] = ListBuffer()
 
